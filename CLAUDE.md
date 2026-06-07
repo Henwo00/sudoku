@@ -8,7 +8,7 @@ Open `index.html` directly in a browser — no build step, no server, no depende
 
 ## Git workflow
 
-Every meaningful change must be committed and pushed to `https://github.com/Henwo00/sudoku`.
+**Commit and push after every meaningful unit of work** — a completed feature, a bug fix, a refactor, or any change the user could want to revert to. Never leave the session with uncommitted changes. This is the safety net; treat it as mandatory.
 
 ```bash
 git add <specific files>
@@ -17,6 +17,8 @@ git push
 ```
 
 Commit prefixes: `feat:` new feature · `fix:` bug fix · `style:` CSS/visual · `refactor:` restructure without behavior change.
+
+Keep commit messages specific enough to identify what changed and why — "fix: prevent eraser from clearing given cells" not "fix: bug fix". Each commit should represent a coherent, working state of the game so any commit can be safely checked out.
 
 ## Architecture
 
